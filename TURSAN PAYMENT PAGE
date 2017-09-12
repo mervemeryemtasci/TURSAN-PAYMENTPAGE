@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ÖDEME SAYFASI</title>
+    <meta charset="utf-8">
+    <script lang="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  
+    <script>       
+        function ONAY(isim) {
+            alert( isim);
+        }   
+    </script>
+
+    <style type="text/css">
+        .checkout-exp
+        {
+            width: 69px;
+            height: 34px;
+        }      
+    </style>
+</head>
+<body>
+    <table border="1" width="600" height="500" bgcolor="#ADDFFF" bordercolor="	#1589FF" align="left" cellspacing="15" cellpadding="20">
+<tbody>
+    <tr> 
+	<td class="auto-style1"> 
+   
+    <form name="iletisim_formu" method ="post" action = "gonder.txt" style="width: 469px; margin-left: 32px"> 	
+		
+        <br />
+        <br/>
+        <br/>
+		Kart Sahibinin Adı : <input type = "text" name="adSoyad" size = "30" style=" height: 25px; width: 195px; margin-left: 54px"  /> <br />
+        <br/>
+        <br/>						
+		Kart Numarası : <input type = "text" name="kartnumarasi" size = "30" maxlength = "16" style="width: 195px; height: 25px; margin-left: 78px; margin-top: 0px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="" style="width: 62px; height: 31px; margin-left: 0px; margin-top: 4px" /><br />
+        <br />       
+        <br />
+        Kart Son Kullanma Tarihi:<input type="text" class="checkout-input checkout-exp" placeholder="MM" style="margin-left:19px"/> &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="checkout-input checkout-exp" placeholder="YY"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        <br /> 
+        CVV Numarası :<input type="text"   placeholder="CVC" style="height: 34px; width: 69px;   margin-left:78px" />
+        <br />
+        <br />                     
+       <input type="button" name="btn" value="ONAY" onclick="ONAY('İŞLEMİNİZ BAŞARIYLA GERÇEKLEŞMİŞTİR...')" style="height: 48px; width: 128px; margin-left: 300px"/></form>
+       
+    </td>	
+</tr>
+</tbody>
+
+   </table>
+</body>
+</html>
